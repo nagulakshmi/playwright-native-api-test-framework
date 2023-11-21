@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test'
 import { getBaseUrl } from './support/apiConfig'
 
 export default defineConfig({
+    reporter: [['html', { open: 'never' }]],
     use: {
         baseURL: getBaseUrl(), // All request will be send this base url
         ignoreHTTPSErrors: true, // SSL check not required here, acutal project need certificate configuration
@@ -11,6 +12,10 @@ export default defineConfig({
         }
     },
     projects: [ //if the test suite has multiple project/ features add here, this allows to execute individually.
-
+        {
+            name: "default",
+            testDir: './tests/',
+            testMatch: '*.ts'
+        }
     ]
 })
