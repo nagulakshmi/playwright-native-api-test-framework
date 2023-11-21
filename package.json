@@ -1,0 +1,25 @@
+{
+  "name": "playwright-native-api-test-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagulakshmi/playwright-native-api-test-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagulakshmi/playwright-native-api-test-framework/issues"
+  },
+  "homepage": "https://github.com/nagulakshmi/playwright-native-api-test-framework#readme",
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "config": "^3.3.9",
+    "playwright": "^1.40.0"
+  }
+}
