@@ -21,3 +21,5 @@ const logger: Logger = createLogger({
         })
     )
 })
+
+export default logger
